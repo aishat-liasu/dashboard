@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SearchForm from "./comp/SearchForm";
+import Categories from "./comp/Categories";
+import Profits from "./comp/ProfitableItems";
+import Statistics from "./comp/Statistics";
+import Products from "./comp/Products";
+import Overview from "./comp/Overview";
+import Latest from "./comp/Latest";
+import Sales from "./comp/Sales";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="second-column">
+        <SearchForm />
+        <Categories />
+        <section className="statistics-profits">
+          <Profits />
+          <Statistics />
+        </section>
+        <Products />
+      </div>
+      <div className="third-column">
+        <Overview />
+        <Latest />
+        <Sales />
+      </div>
     </div>
   );
 }

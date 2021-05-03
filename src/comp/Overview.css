@@ -1,0 +1,16 @@
+.overview p {
+  margin-top: 5px;
+}
+.overview-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(213, 245, 253);
+}
+.overview__first {
+  display: flex;
+  justify-content: space-between;
+}
+.overview__second {
+  display: flex;
+  justify-content: space-between;
+}
