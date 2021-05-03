@@ -4,6 +4,7 @@ import "./Overview.css";
 const Overview = () => {
   return (
     <div className="overview">
+      <h2 className="section__title">Overview</h2>
       <section className="overview-card">
         <div className="overview__first">
           <article className="total">
